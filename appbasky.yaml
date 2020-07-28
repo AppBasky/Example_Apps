@@ -1,0 +1,11 @@
+template: 'python'
+framework: 'django'
+image: 'python:3.7-buster'
+env:
+  - name: APP_NAME
+    value: "AppBasky Django-Example"
+command:
+  - pip install -r requirements.txt
+  - python manage.py migrate
+  - python manage.py loaddata data/populate.json
+  - gunicorn --bind=0.0.0.0 --workers=4 blog:wsgi

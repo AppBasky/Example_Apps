@@ -1,0 +1,31 @@
+[
+  {
+    "model": "app.post",
+    "pk": 1,
+    "fields": {
+      "author": 1,
+      "title": "Sample title",
+      "text": "Test",
+      "created_date": "2020-07-28T14:59:38.955Z",
+      "published_date": "2020-07-28T15:06:47.117Z"
+    }
+  },
+  {
+    "model": "auth.user",
+    "pk": 1,
+    "fields": {
+      "password": "pbkdf2_sha256$180000$vEWXnQKixhvO$P04BDovpDgAi1TVSRawx2+REyx7p749nf7j+d80o3Fc=",
+      "last_login": null,
+      "is_superuser": true,
+      "username": "root",
+      "first_name": "",
+      "last_name": "",
+      "email": "root@admin.com",
+      "is_staff": true,
+      "is_active": true,
+      "date_joined": "2020-07-28T15:25:05.823Z",
+      "groups": [],
+      "user_permissions": []
+    }
+  }
+]
