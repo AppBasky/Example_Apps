@@ -1,9 +1,9 @@
-template: 'python'
-framework: 'flask'
-image: 'python:3.7-buster'
+image: 'python37'
+
 env:
   - name: APP_NAME
     value: "Flask-Example"
-command:
+    
+entrypoint:
   - pip install -r requirements.txt
   - gunicorn --bind=0.0.0.0 --workers=4 startup:app
