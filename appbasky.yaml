@@ -1,10 +1,10 @@
-template: 'python'
-framework: 'django'
-image: 'python:3.7-buster'
+runtime: 'python37'
+
 env:
   - name: APP_NAME
     value: "AppBasky Django-Example"
-command:
+    
+entrypoint:
   - pip install -r requirements.txt
   - python manage.py migrate
   - python manage.py loaddata data/populate.json
