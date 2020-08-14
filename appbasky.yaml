@@ -1,4 +1,4 @@
-image: 'python37'
+runtime: 'python37'
 
 env:
   - name: APP_NAME
